@@ -53,9 +53,9 @@ async function coingeckoDirection(direction) {
 
   let len = tickerInfo.length / 2;
   if (direction !== "down") {
-    return [...tickerHead(direction), tickerInfo.slice(0, len + 1)];
+    return [...tickerHead(direction), tickerInfo.slice(0, len)];
   }
-  return (tickerInfo = [...tickerHead(direction), tickerInfo.slice(len + 1)]);
+  return (tickerInfo = [...tickerHead(direction), tickerInfo.slice(len)]);
 }
 
 async function getCryptoInfo(cherrioFunction, exchange) {
