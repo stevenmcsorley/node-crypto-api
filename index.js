@@ -1,4 +1,4 @@
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3000;
 import express from "express";
 import axios from "axios";
 import { load } from "cheerio";
