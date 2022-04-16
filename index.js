@@ -45,6 +45,7 @@ const tickerHead = (direction) => {
 };
 
 async function coingeckoDirection(direction) {
+  tickerInfo = []
   await getCryptoInfo(
     getCoingeckoTrending,
     "https://www.coingecko.com/en/coins/trending"
